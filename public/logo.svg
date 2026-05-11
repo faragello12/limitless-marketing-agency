@@ -1,0 +1,5 @@
+<svg width="160" height="40" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="160" height="40" rx="8" fill="black"/>
+  <path d="M16 27V13H20V23.5H31V27H16Z" fill="#D4B62D"/>
+  <text x="40" y="27" fill="#D4B62D" font-family="Inter, sans-serif" font-size="16" letter-spacing="1.8">LIMITLESS</text>
+</svg>
