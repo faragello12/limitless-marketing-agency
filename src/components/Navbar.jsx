@@ -214,7 +214,7 @@ export default function Navbar() {
               whileTap={{ scale: 0.98 }}
               className="mt-4 inline-flex w-full items-center justify-center gap-3 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-black"
               onClick={() => {
-                window.location.href = '/contact';
+                navigate('/contact');
                 window.scrollTo(0, 0);
               }}
             >

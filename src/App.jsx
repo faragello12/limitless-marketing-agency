@@ -80,7 +80,7 @@ export default function App() {
               whileHover={{ y: -4, scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
               onClick={() => {
-                window.location.href = '/contact';
+                navigate('/about');
                 window.scrollTo(0, 0);
               }}
             >
