@@ -106,7 +106,7 @@ export default function Navbar() {
             whileTap={{ scale: 0.98 }}
             className="hidden items-center gap-3 rounded-full bg-gold px-6 py-2.5 text-sm font-semibold text-black tablet:inline-flex"
             onClick={() => {
-              window.location.href = '/contact';
+              navigate('/contact');
               window.scrollTo(0, 0);
             }}
           >

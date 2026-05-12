@@ -1,6 +1,6 @@
 import { lazy, Suspense, useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useLenis } from "../hooks/useLenis";
 import { revealClipPath, sectionFadeTransition, staggerContainer, fadeUp } from "../lib/motion";
 import CustomCursor from "../components/CustomCursor";
@@ -11,6 +11,7 @@ import Footer from "../components/Footer";
 
 export default function ContactUs() {
   useLenis();
+  const navigate = useNavigate();
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -188,7 +189,7 @@ export default function ContactUs() {
               whileHover={{ y: -4, scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
               onClick={() => {
-                window.location.href = '/contact';
+                navigate('/contact');
                 window.scrollTo(0, 0);
               }}
             >

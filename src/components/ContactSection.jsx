@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { fadeUp, staggerContainer } from "../lib/motion";
 import Footer from "./Footer";
 
 export default function ContactSection() {
+  const navigate = useNavigate();
   return (
     <>
       <section className="scene relative px-6 pb-16 pt-24">
@@ -37,8 +38,9 @@ export default function ContactSection() {
                 whileTap={{ scale: 0.98 }}
                 whileHover={{ y: -2 }}
                 className="mt-2 w-full rounded-full bg-gold py-3 text-sm font-medium text-black transition hover:shadow-glow"
-                onClick={() => {
-                  window.location.href = '/contact';
+                onClick={(event) => {
+                  event.preventDefault();
+                  navigate('/contact');
                   window.scrollTo(0, 0);
                 }}
               >

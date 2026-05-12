@@ -74,7 +74,7 @@ export default function InfluencerCampaigns() {
               whileHover={{ y: -4, scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
               onClick={() => {
-                window.location.href = '/contact';
+                navigate('/contact');
                 window.scrollTo(0, 0);
               }}
             >
@@ -182,7 +182,7 @@ export default function InfluencerCampaigns() {
               whileHover={{ y: -4, scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
               onClick={() => {
-                window.location.href = '/contact';
+                navigate('/contact');
                 window.scrollTo(0, 0);
               }}
             >
