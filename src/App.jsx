@@ -1,4 +1,5 @@
 import { lazy, Suspense, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useLenis } from "./hooks/useLenis";
 import { revealClipPath, sectionFadeTransition, staggerContainer, fadeUp } from "./lib/motion";
@@ -15,6 +16,7 @@ const ContactSection = lazy(() => import("./components/ContactSection"));
 
 export default function App() {
   useLenis();
+  const navigate = useNavigate();
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
