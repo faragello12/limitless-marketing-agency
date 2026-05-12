@@ -137,10 +137,14 @@ body {
   align-items: baseline;
   justify-content: center;
   gap: 0.18em;
-  white-space: nowrap;
+  white-space: normal;
+  flex-wrap: wrap;
   transform: none !important;
   text-align: center;
   width: 100%;
+}
+.hero-line span {
+  display: inline-block;
 }
 
 .hero-title,

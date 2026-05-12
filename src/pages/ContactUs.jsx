@@ -1,6 +1,6 @@
 import { lazy, Suspense, useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useLenis } from "../hooks/useLenis";
 import { revealClipPath, sectionFadeTransition, staggerContainer, fadeUp } from "../lib/motion";
 import CustomCursor from "../components/CustomCursor";
@@ -45,13 +45,13 @@ export default function ContactUs() {
         <section className="scene relative flex min-h-screen items-center justify-center px-6">
           <div className="hero-glow" />
           <motion.div
-            className="relative z-10 mx-auto mt-10 max-w-[1440px] text-center"
+            className="relative z-10 mx-auto mt-10 w-full max-w-[900px] px-4 text-center sm:px-6"
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
           >
-            <h1 className="hero-title text-[38px] font-semibold leading-[1.02] md:text-[52px] lg:text-[74px]">
+            <h1 className="hero-title text-[30px] font-semibold leading-[1.1] sm:text-[38px] md:text-[52px] lg:text-[74px]">
               <span className="hero-line hero-line-top lg:mb-5">
                 <span>Let&apos;s Talk</span>
                 <span className="gold-swipe hero-seen text-[#161616]">Strategy</span>
@@ -65,11 +65,11 @@ export default function ContactUs() {
         </section>
 
         {/* Contact Form Section */}
-        <section className="scene relative px-6 pb-16 pt-24">
-          <div className="mx-auto max-w-[1440px]">
+        <section className="scene relative px-4 pb-16 pt-20 sm:px-6 sm:pt-24">
+          <div className="mx-auto w-full max-w-[1100px] px-4 sm:px-6">
             <div className="grid gap-10 xl:grid-cols-[1.1fr_0.9fr]">
               <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}>
-                <motion.h2 variants={fadeUp} className="text-5xl font-semibold leading-[1.02] md:text-6xl xl:text-7xl">
+                <motion.h2 variants={fadeUp} className="text-4xl font-semibold leading-[1.05] sm:text-5xl md:text-6xl xl:text-7xl">
                   Start Your <span className="text-gold">Project</span>
                 </motion.h2>
               </motion.div>
@@ -139,31 +139,41 @@ export default function ContactUs() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.24 }}
         >
-          <div className="mx-auto max-w-[1440px]">
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6">
+            <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
               <motion.div variants={fadeUp} className="text-center md:text-left">
                 <h3 className="mb-4 text-2xl font-semibold text-white">Email</h3>
-                <p className="text-lg text-white/70">info@limitlessmarketingagency.net</p>
+                <a
+                  href="mailto:info@limitlessmarketingagency.net"
+                  className="text-base sm:text-lg text-white/70 block max-w-full mb-4 break-all whitespace-normal hover:text-gold"
+                >
+                  info@limitlessmarketingagency.net
+                </a>
               </motion.div>
 
               <motion.div variants={fadeUp} className="text-center md:text-left">
                 <h3 className="mb-4 text-2xl font-semibold text-white">Phone</h3>
-                <p className="text-lg text-white/70">+20 101 104 2862</p>
+                <a
+                  href="tel:+201011042862"
+                  className="text-base sm:text-lg text-white/70 block mb-4 break-all whitespace-normal hover:text-gold"
+                >
+                  +20 101 104 2862
+                </a>
               </motion.div>
 
               <motion.div variants={fadeUp} className="text-center md:text-left">
                 <h3 className="mb-4 text-2xl font-semibold text-white">Address</h3>
-                <p className="text-lg text-white/70">3 Labib Al Batanony, Manyal, Cairo, Egypt</p>
+                <p className="text-base sm:text-lg text-white/70 block mb-4 break-all whitespace-normal">3 Labib Al Batanony, Manyal, Cairo, Egypt</p>
               </motion.div>
 
               <motion.div variants={fadeUp} className="text-center md:text-left">
                 <h3 className="mb-4 text-2xl font-semibold text-white">Social Links</h3>
-                <div className="flex justify-center gap-4 md:justify-start">
-                  <a href="#" className="text-white/70 hover:text-gold transition">Facebook</a>
-                  <a href="#" className="text-white/70 hover:text-gold transition">TikTok</a>
-                  <a href="#" className="text-white/70 hover:text-gold transition">IG</a>
-                  <a href="#" className="text-white/70 hover:text-gold transition">LinkedIn</a>
-                  <a href="#" className="text-white/70 hover:text-gold transition">YouTube</a>
+                <div className="flex flex-wrap justify-center gap-4 md:justify-start">
+                  <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-base sm:text-lg text-white/70 hover:text-gold transition">Facebook</a>
+                  <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" className="text-base sm:text-lg text-white/70 hover:text-gold transition">TikTok</a>
+                  <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-base sm:text-lg text-white/70 hover:text-gold transition">IG</a>
+                  <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-base sm:text-lg text-white/70 hover:text-gold transition">LinkedIn</a>
+                  <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="text-base sm:text-lg text-white/70 hover:text-gold transition">YouTube</a>
                 </div>
               </motion.div>
             </div>
@@ -188,10 +198,7 @@ export default function ContactUs() {
               className="mt-10 inline-flex w-full max-w-[320px] items-center justify-center gap-4 rounded-full bg-gold px-6 py-3 text-sm font-medium text-black transition sm:max-w-none sm:w-auto sm:px-8 sm:py-4 sm:text-base"
               whileHover={{ y: -4, scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
-              onClick={() => {
-                navigate('/contact');
-                window.scrollTo(0, 0);
-              }}
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               <span>Schedule a Call</span>
               <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-black/10">
