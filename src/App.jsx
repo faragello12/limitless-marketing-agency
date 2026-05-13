@@ -38,7 +38,7 @@ export default function App() {
       <div className="grain-overlay" />
 
       <main className={`relative z-10 transition-all duration-1000 ${loaded ? "opacity-100 scale-100" : "opacity-0 scale-[1.03]"}`}>
-        <section className="scene hero-scene relative flex min-h-screen items-center justify-center px-6">
+        <section className="scene hero-scene relative flex min-h-screen items-center justify-center px-6 pt-28 lg:pt-0">
           <div className="hero-glow" />
           <motion.div className="floating-icon icon-a" animate={{ y: [0, -30, 0], rotate: [-8, -3, -8] }} transition={{ duration: 8, repeat: Infinity }}>
             <img src="/images/hero/youtube (1) 1.png" alt="YouTube icon" className="object-contain" />

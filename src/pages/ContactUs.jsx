@@ -42,18 +42,21 @@ export default function ContactUs() {
 
       <main className={`relative z-10 transition-all duration-1000 ${loaded ? "opacity-100 scale-100" : "opacity-0 scale-[1.03]"}`}>
         {/* Hero Section */}
-        <section className="scene relative flex min-h-screen items-center justify-center px-6">
+        <section className="scene relative flex min-h-screen items-center justify-center px-6 pt-28 lg:pt-24">
           <div className="hero-glow" />
           <motion.div
-            className="relative z-10 mx-auto mt-10 w-full max-w-[900px] px-4 text-center sm:px-6"
+            className="relative z-10 mx-auto w-full max-w-[1440px] px-4 sm:px-6 tablet:px-10 text-center"
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
           >
+            <motion.p className="chip mb-6" variants={fadeUp}>Contact Us</motion.p>
             <h1 className="hero-title text-[30px] font-semibold leading-[1.1] sm:text-[38px] md:text-[52px] lg:text-[74px]">
               <span className="hero-line hero-line-top lg:mb-5">
                 <span>Let&apos;s Talk</span>
+              </span>
+              <span className="hero-line hero-line-bottom">
                 <span className="gold-swipe hero-seen text-[#161616]">Strategy</span>
               </span>
             </h1>
@@ -61,6 +64,15 @@ export default function ContactUs() {
               Whether you&apos;re launching, scaling, or rebranding — we&apos;re ready to help.
               Use the form or reach out directly, and let&apos;s build something worth remembering.
             </motion.p>
+            <motion.div className="relative mx-auto mt-12 w-full max-w-[1400px]" variants={fadeUp}>
+              <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-[#222222]/60 shadow-glow">
+                <img
+                  src="/images/contact/hero.png"
+                  alt="Contact hero"
+                  className="w-full object-cover"
+                />
+              </div>
+            </motion.div>
           </motion.div>
         </section>
 

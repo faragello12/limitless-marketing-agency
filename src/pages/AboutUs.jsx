@@ -59,7 +59,7 @@ export default function AboutUs() {
 
       <main className={`relative z-10 transition-all duration-1000 ${loaded ? "opacity-100 scale-100" : "opacity-0 scale-[1.03]"}`}>
         {/* Hero Section */}
-        <section className="scene relative flex min-h-screen items-center justify-center px-6">
+        <section className="scene relative flex min-h-screen items-center justify-center px-6 pt-28 lg:pt-0">
           <div className="hero-glow" />
           <motion.div
             className="relative z-10 mx-auto mt-10 max-w-[1440px] text-center"

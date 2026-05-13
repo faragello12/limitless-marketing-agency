@@ -155,6 +155,18 @@ body {
   font-style: normal !important;
 }
 
+@media (min-width: 1024px) {
+  .hero-title-left {
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+  
+  .hero-title-left .hero-line {
+    justify-content: flex-start !important;
+    text-align: left !important;
+  }
+}
+
 .hero-line-top,
 .hero-line-bottom {
   line-height: 1.02;
@@ -322,5 +334,15 @@ body {
     white-space: normal;
     flex-wrap: wrap;
     gap: 0.15em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-left .hero-title {
+    align-items: flex-start;
+  }
+  
+  .text-left .hero-line {
+    justify-content: flex-start;
   }
 }

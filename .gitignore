@@ -1,0 +1,16 @@
+# Node modules
+node_modules/
+
+# Production build output
+/dist/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Local env
+.env
+.env.*
+
+# VS Code settings
+.vscode/
