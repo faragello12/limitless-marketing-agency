@@ -8,7 +8,6 @@ const brands = [
   "/images/brands/logo3.png",
   "/images/brands/logo4.png",
   "/images/brands/logo5.png",
-  "/images/brands/logo6.png",
 ];
 
 export default function BrandsSection() {
@@ -29,12 +28,12 @@ export default function BrandsSection() {
         viewport={{ once: true, amount: 0.35 }}
         transition={{ duration: 1.8 }}
         style={{
-          backgroundImage: "url('/images/brands/for brands section image.png')",
+          backgroundImage: "url('/images/brands/for brands section image.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-black/75" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/55 to-black/80" />
 
       <div className="relative z-10 mx-auto max-w-[1440px]">
         <div className="text-center">

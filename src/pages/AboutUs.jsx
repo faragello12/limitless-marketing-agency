@@ -83,7 +83,7 @@ export default function AboutUs() {
               variants={fadeUp}
             >
               <img
-                src="/images/about us assets/hero photo.png"
+                src="/images/about us assets/hero photo.jpg"
                 alt="About Us hero"
                 className="h-[360px] w-full object-cover sm:h-[520px]"
               />
@@ -127,7 +127,7 @@ export default function AboutUs() {
                 className="relative overflow-hidden rounded-[3rem] border border-white/10 bg-[#111111]/60 shadow-[0_40px_120px_rgba(0,0,0,0.35)]"
               >
                 <img
-                  src="/images/about us assets/who we are section.png"
+                  src="/images/about us assets/who we are section.jpg"
                   alt="Who We Are section"
                   className="h-[440px] w-full object-cover sm:h-[520px]"
                 />
