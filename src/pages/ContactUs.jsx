@@ -181,11 +181,10 @@ export default function ContactUs() {
               <motion.div variants={fadeUp} className="text-center md:text-left">
                 <h3 className="mb-4 text-2xl font-semibold text-white">Social Links</h3>
                 <div className="flex flex-wrap justify-center gap-4 md:justify-start">
-                  <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-base sm:text-lg text-white/70 hover:text-gold transition">Facebook</a>
-                  <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" className="text-base sm:text-lg text-white/70 hover:text-gold transition">TikTok</a>
-                  <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-base sm:text-lg text-white/70 hover:text-gold transition">IG</a>
-                  <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-base sm:text-lg text-white/70 hover:text-gold transition">LinkedIn</a>
-                  <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="text-base sm:text-lg text-white/70 hover:text-gold transition">YouTube</a>
+                  <a href="https://www.facebook.com/limitlessformarketing/" target="_blank" rel="noopener noreferrer" className="text-base sm:text-lg text-white/70 hover:text-gold transition">Facebook</a>
+                  <a href="https://www.tiktok.com/@limitlessformarketing" target="_blank" rel="noopener noreferrer" className="text-base sm:text-lg text-white/70 hover:text-gold transition">TikTok</a>
+                  <a href="https://www.instagram.com/limitlessformarketing/" target="_blank" rel="noopener noreferrer" className="text-base sm:text-lg text-white/70 hover:text-gold transition">IG</a>
+                  <a href="https://www.linkedin.com/company/limitless-for-marketing/" target="_blank" rel="noopener noreferrer" className="text-base sm:text-lg text-white/70 hover:text-gold transition">LinkedIn</a>
                 </div>
               </motion.div>
             </div>
